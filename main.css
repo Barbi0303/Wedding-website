@@ -3,10 +3,55 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url(Assets/wedding-landing-background.png) repeat center;
+  background-size: cover;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 1.5rem;
+  color: #444349;
+  line-height: 1.25;
+}
+
+.location,.program,.gifts,.QandA,.contact {
+  margin: 2rem auto;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  width: 95%;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover: {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/* vertical rhythm */
+
+h1,h2,h3,
+ul,p,img {
+  margin-bottom: 1rem;
+}
+
 /* Header styles */
 .cover {
-  background: url(Assets/wedding-cover.jpg) no-repeat center center;
-  background-size: cover;
+  background: url(Assets/wedding-cover.jpg) no-repeat 70% center/cover;
   height: 100vh;
   width: 100vw;
   display: table;
@@ -14,7 +59,29 @@
 }
 
 .main-data {
+  display: table-cell;
   vertical-align: middle;
-  padding: 2rem;
-  background-color: yellow;
 }
+
+.wrapper {
+  background-color: hsla(100,0%,0%,.6);
+  color: hsla(0,0%,100%,.9);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  color: #d2ba87;
+  font-size: 4.5rem;
+}
+
+/*font-family: 'Libre Baskerville', serif;
+font-family: 'Mulish', sans-serif; 
+favicon: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png
+default text color: #444349 (grey)
+alternate text color: #d2ba87 (gold)
+header tagline and date color: hsla(0,0%,100%,.9);
+dark background: hsla(100,0%,0%,.6);
+link color: #bd806e
+link color on hover: #eda087
+footer background color: #606060 */
