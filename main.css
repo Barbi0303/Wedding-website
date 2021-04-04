@@ -7,14 +7,14 @@ body {
   background: url(Assets/wedding-landing-background.png) repeat center;
   background-size: cover;
   font-family: 'Libre Baskerville', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.12rem;
   color: #444349;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .location,.program,.gifts,.QandA,.contact {
-  margin: 2rem auto;
-  padding: 1rem 0.5rem;
+  margin: 1.75rem auto;
+  padding: .5rem 1rem;
   text-align: center;
   width: 95%;
 }
@@ -24,12 +24,11 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 a {
@@ -43,7 +42,6 @@ a:hover: {
 }
 
 /* vertical rhythm */
-
 h1,h2,h3,
 ul,p,img {
   margin-bottom: 1rem;
@@ -67,65 +65,65 @@ ul,p,img {
   background-color: hsla(100,0%,0%,.6);
   color: hsla(0,0%,100%,.9);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 h1 {
   color: #d2ba87;
-  font-size: 4.5rem;
+  font-size: 3rem;
   margin-bottom: 0; /* To negate the effect of the single-direction margin declaration!! */
 }
 
 .tagline {
-  font-size: 2rem;
-  letter-spacing: 0.25rem;
+  font-size: 1.3rem;
+  letter-spacing: .15rem;
 }
 
 .tagline::after {
   display: block;
   content: "";
   background-color: #fff;
-  height: 1.5px;
-  width: 20rem;
+  height: 1px;
+  width: 12rem;
   margin: .5rem auto;
 }
 
 .date {
-  font-size: 2rem;
-  letter-spacing: 0.25rem;
+  font-size: 1.2rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
 }
 
 .date::after, .date::before {
   display: inline-block;
   content: "";
   background-color: #fff;
-  height: 1.5px;
-  width: 2rem;
+  height: .5px;
+  width: 1.5rem;
   margin: 0 .5rem;
   vertical-align: middle;
 }
 
 /* main/locations styles */
 .places img {
-  width: 6.5rem;
+  width: 6rem;
 }
 
 .location div {
   font-family: 'Mulish', sans-serif;
-  line-height: 1rem;
+  line-height: 0.5rem;
 }
 
 .places::after {
   display: block;
   content: "";
   background-color: hsla(100,0%,0%,.6);
-  height: 0.18rem;
+  height: .1rem;
   width: 9rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
 }
 
 /* main/program styles */
-
 .program {
   background-color: hsla(100,0%,0%,.6);
   width: 100vw;
@@ -139,18 +137,19 @@ h1 {
 }
 
 ul {
-  line-height: 2.5rem;
-  margin-top: 2rem;
+  line-height: 1.4rem;
+  margin-top: 1rem;
 }
 
-.program p {
+.timetable p {
+  line-height: 1.2rem;
   font-style: italic;
 }
 
 /* main/gifts styles */
 
 .gifts img{
-  width: 6.5rem;
+  width: 6rem;
 }
 
 .gifts p:last-child {   /* To even out the bottom and top margins of this section. */
@@ -158,7 +157,6 @@ ul {
 }
 
 /* main/Q&A */
-
 .QandA {
   background-color: hsla(100,0%,0%,.6);
   width: 100vw;
@@ -167,7 +165,7 @@ ul {
 
 .QandA p {
   text-align: left;
-  margin: 2rem 1.5rem;
+  margin: 1.5rem 1rem;
 }
 
 .question {
@@ -178,8 +176,8 @@ ul {
   display: block;
   content: "";
   background-color: #d2ba87;
-  height: 0.2rem;
-  width: 17rem;
+  height: .08rem;
+  width: 12rem;
   margin: 2rem auto;
 }
 
@@ -196,15 +194,12 @@ footer {
 .footer-wrapper {
   display: table-cell;
   vertical-align: middle;
-  padding: 2rem 1.5rem;
+  padding: 1rem .5rem;
 }
 
 footer p {
   margin-bottom: 0;
 }
-
-
-
 
 /* font-family: 'Mulish', sans-serif; 
 favicon: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png
