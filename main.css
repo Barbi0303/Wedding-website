@@ -104,9 +104,53 @@ h1 {
   vertical-align: middle;
 }
 
+@media (min-width: 768px) {
+  
+  .cover {
+    background: url(Assets/wedding-cover.jpg) no-repeat center/cover;
+  }
+  
+  .tagline {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  .main-data {
+    margin: auto 10rem;
+    border-radius: 4px;
+    padding: 1.25rem;
+  }
+  
+}
+
+@media (min-width: 1440px) {
+  
+  .tagline {
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 7rem;
+  }
+  
+  .main-data {
+    margin: auto 25rem;
+  }
+  
+}
+
 /* main/locations styles */
 .places img {
   width: 6rem;
+}
+
+.places h3 {
+  font-weight: 700;
 }
 
 .location div {
@@ -123,12 +167,40 @@ h1 {
   margin: 1.5rem auto;
 }
 
+@media (min-width: 768px) {
+  
+  .places {
+    display: inline-block; /* 3 oszlopos layouthoz */
+    width: 30%;
+    font-size: 1rem;
+  }
+  
+  .places::after {
+    display: none;
+  }
+  
+  .places h3 {
+    padding: .8rem;
+    
+  }
+  
+}
+
+@media (min-width: 1440px) {
+  
+  .places img {
+    width: 7.5rem;
+  }
+  
+}
+
 /* main/program styles */
 .program {
   background-color: hsla(100,0%,0%,.6);
   width: 100vw;
   color: #d2ba87;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
+  padding: 1rem;
 }
 
 .timetable {
@@ -144,11 +216,29 @@ ul {
 .timetable p {
   line-height: 1.2rem;
   font-style: italic;
+  font-weight: 700;
+}
+
+.program h2 {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  
+  .timetable {
+    width: 35vw;
+    margin: 0 auto;
+  }
+  
+  li {
+    line-height: 1.8rem;
+  }
+  
 }
 
 /* main/gifts styles */
 
-.gifts img{
+.gifts img {
   width: 6rem;
 }
 
@@ -161,11 +251,11 @@ ul {
   background-color: hsla(100,0%,0%,.6);
   width: 100vw;
   color: #d2ba87;
+  text-align: center;
 }
 
 .QandA p {
   text-align: left;
-  margin: 1.5rem 1rem;
 }
 
 .question {
@@ -181,6 +271,27 @@ ul {
   margin: 2rem auto;
 }
 
+@media ( min-width: 768px) {
+  
+  .important-information {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top; /* egymáshoz igazítja az oszlopokat felül! */
+    padding: 1.5rem;
+    margin: .5rem;
+    font-size: 1rem;
+  }
+  
+  .important-information::after {
+    display: none;
+  }
+  
+  .important-information h3 {
+    text-align: left;
+  }
+  
+}
+
 /* footer styless */
 
 footer {
@@ -189,6 +300,7 @@ footer {
   height: 6.5rem;
   background-color: #606060;
   color: #fff;
+  width: 100%;
 }
 
 .footer-wrapper {
@@ -201,11 +313,14 @@ footer p {
   margin-bottom: 0;
 }
 
-/* font-family: 'Mulish', sans-serif; 
-favicon: https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png
-default text color: #444349 (grey)
-alternate text color: #d2ba87 (gold)
-header tagline and date color: hsla(0,0%,100%,.9);
-dark background: hsla(100,0%,0%,.6);
-footer background color: #606060 
-*/
+@media (min-width: 768px) {
+  
+  footer {
+    height: 4rem;
+  }
+  
+  .footer-wrapper p {
+    font-size: .8rem;
+  }
+  
+}
